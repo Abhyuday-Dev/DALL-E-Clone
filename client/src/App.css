@@ -1,0 +1,53 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0.8rem 1rem;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 2px -2px rgba(9, 0, 0, 0.2);
+}
+
+a{
+  text-decoration: none;
+}
+
+svg{
+  width: 120px;
+  height: 30px;
+}
+
+
+
+input{
+  outline: none;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.create{
+  background-color:rgb(37, 86, 191) ;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  color: white;
+  margin: 0.1rem;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  svg{
+    width: 90px;
+    height: 30px;
+  }
+  header{
+    overflow-x:hidden;
+    padding: 0.1rem;
+  }
+}
+
+
+

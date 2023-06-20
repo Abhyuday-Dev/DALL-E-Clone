@@ -1,0 +1,39 @@
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 1rem;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: darkgreen;
+}
+
+.create-heading {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.create-sub{
+    text-align: center;
+    font-size: 1rem;
+}
+
+form{
+    padding: 2rem 5rem;
+}
+
+.create-img{
+    display: inline-block;
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.create-img img{
+    object-fit: contain;
+    object-position: center;
+}
