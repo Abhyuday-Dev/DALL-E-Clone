@@ -15,7 +15,7 @@ const FormField = ({
       <div>
         <label htmlFor={name}>{LabelName}</label>
         {isSurpriseMe && (
-          <button type="button" onClick={handleSurpriseMe}>
+          <button type="button"  className="surprise-button" onClick={handleSurpriseMe}>
             Surprise Me
           </button>
         )}

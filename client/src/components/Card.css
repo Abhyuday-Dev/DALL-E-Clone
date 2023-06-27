@@ -1,176 +1,120 @@
-.card{
+
+.card {
     width: 400px;
     height: 400px;
     margin: 1rem;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-}
-
-img{
+  }
+  
+  img {
     width: 400px;
     height: 400px;
     object-fit: contain;
     object-position: center;
-
-}
-
-.card-content{
-    display: flex;
+  }
+  
+  .card-content {
+    display: none;
     flex-direction: column;
     gap: 8px;
-   position: absolute;
-   bottom: 0;
-   width: 400px;
-   padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.5); 
+    backdrop-filter: blur(3px);
+  }
 
-}
-
-.card-content:hover{
+  .card:hover .card-content{
     display: flex;
-}
-
-button img{
+    cursor: pointer;
+  }
+  
+  
+  
+  button img {
     outline: none;
     width: 25px;
     height: 25px;
     border-radius: 20px;
     background: transparent;
-}
-
-button{
+  }
+  
+  button {
     outline: none;
-    border:none;
+    border: none;
     background: none;
-}
-
-.con{
+  }
+  
+  .con {
     display: flex;
     justify-content: space-between;
-}
-
-.con-in{
+  }
+  
+  .con-in {
     display: flex;
     gap: 10px;
-}
-
-.name-icon{
+  }
+  
+  .name-icon {
     background-color: green;
     width: 25px;
     height: 25px;
     text-align: center;
     border-radius: 30px;
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    .card{
-        width: 400px;
-        height: 400px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%;
+      height: auto;
     }
-    .card-content{
-        width: 400px;
-        font-size: 0.5rem;
+  
+    img {
+      width: 100%;
+      height: auto;
     }
-    .con-in{
-        gap: 5px;
+  
+    .card-content {
+      width: 100%;
     }
-    p{
-        font-size: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+      height: auto;
+      margin: 0.5rem;
     }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .card{
-        width: 300px;
-        height: 300px;
+  
+    img {
+      width: 100%;
+      height: auto;
     }
-    .card-content{
-        width: 300px;
+  
+    .card-content {
+      width: 100%;
     }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    .card{
-        width: 200px;
-        height: 200px;
+  }
+  
+  @media (max-width: 350px) {
+    .card {
+      width: 100%;
+      height: auto;
+      margin: 0.5rem;
     }
-    .card-content{
-        width: 200px;
+  
+    img {
+      width: 100%;
+      height: auto;
     }
-    p{
-        font-size: 10px;
+  
+    .card-content {
+      width: 100%;
+      padding: 0.3rem;
     }
-    .name-icon{
-        background-color: green;
-        width: 15px;
-        height: 15px;
-        text-align: center;
-        border-radius: 30px;
-        font-size: 10px;
-    }
-    button img{
-        outline: none;
-        width: 15px;
-        height: 15px;
-        border-radius: 20px;
-        background: transparent;
-    }
-}
-
-@media (max-width: 576px) {
-    .card{
-        width: 280px;
-        height: 280px;
-    }
-    .card-content{
-        width: 280px;
-        text-decoration: solid;
-    }
-    p{
-        font-size: 10px;
-    }
-    .name-icon{
-        background-color: green;
-        width: 15px;
-        height: 15px;
-        text-align: center;
-        border-radius: 30px;
-        font-size: 10px;
-    }
-    button img{
-        outline: none;
-        width: 15px;
-        height: 15px;
-        border-radius: 20px;
-        background: transparent;
-    }
-}
-
-@media (max-width: 391px) {
-    .card{
-        width: 280px;
-        height: 280px;
-    }
-    .card-content{
-        width: 280px;
-        text-decoration: solid;
-    }
-    p{
-        font-size: 10px;
-    }
-    .name-icon{
-        background-color: green;
-        width: 15px;
-        height: 15px;
-        text-align: center;
-        border-radius: 30px;
-        font-size: 10px;
-    }
-    button img{
-        outline: none;
-        width: 15px;
-        height: 15px;
-        border-radius: 20px;
-        background: transparent;
-    }
-}
+  }
+  
