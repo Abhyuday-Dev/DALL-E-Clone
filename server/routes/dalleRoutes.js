@@ -31,7 +31,8 @@ router.route('/').post(async (req, res) => {
     res.status(200).json({ photo: image });
   } catch (error) {
     console.error(error);
-    res.status(500).send(error?.response.data.error.message || 'Something went wrong');
+    console.error(error.response?.data); // Log the response data for inspection
+    res.status(500).send(error?.response?.data?.error?.message || 'Something went wrong');
   }
 });
 
